@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Это мой первый сайт, не судите строго:)</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	
+
+	<style type="text/css">
+		html, body {
+			height: 100%;
+			font-family: Montserrat;
+		}
+		h2 {
+			color: red;
+		}
+		h3 {
+			color: #30d0d9;
+		}
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+
+	</style>
+
+		<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("Apr 16, 2022 15:37:25").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	  // Get today's date and time
+	  var now = new Date().getTime();
+
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	  // Display the result in the element with id="demo"
+	  document.getElementById("countdown").innerHTML = days + " дней : " + hours + " часов : "
+	  + minutes + " минут : " + seconds + " секунд";
+
+	  // If the count down is finished, write some text
+	  if (distance < 0) {
+	    clearInterval(x);
+	    document.getElementById("countdown").innerHTML = "EXPIRED";
+	  }
+	}, 1000);
+	</script>
+</head>
+<body>
+<h1>Всем привет, меня зовут Тарас Летников</h1>
+<h2>Сайт пока в разработке</h2>
+<h3> Моё обучение начнётся через: <span id="countdown"></span></h3>
+<div>Вы можете связаться со мной по телефону +380630323111</div>
+<div>Для сотрудничества, пишите на адрес
+электронной почты (email) <a href="mailto:vokintel@gmail.com?subject=Сотрудничество с Таурус групп"> vokintel@gmail.com</a> </div>
+<div>Или написать в Инстаграм <a href="https://www.instagram.com/letnikov.taras/" target="_blank">@taras.lietnikov</a></div>
+<div>Cсылку на канал в 
+<a href="https://www.youtube.com/channel/UCehlweSNZJWN63Rm_3hpDPQ" target="_blank">YouTube</a></div>
+
+</body>
+</html>
+
